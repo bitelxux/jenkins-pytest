@@ -1,4 +1,9 @@
 node(){
+
+    stage('checkout'){
+        scm checkout
+    }
+
     stage("tests"){
         sh "pytest tests/test.py --tb=line --junitxml=results.xml"
     }
