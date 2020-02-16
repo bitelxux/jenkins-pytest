@@ -9,7 +9,7 @@ node(){
     }
 
     stage("tests"){
-        sh "pytest tests/test.py --tb=line --junitxml=tests-results/results.xml"
+        sh "pytest --cov=. tests/test.py --tb=line --junitxml=tests-results/results.xml"
     }
 
     stage("publish"){
