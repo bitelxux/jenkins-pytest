@@ -20,3 +20,7 @@ def test1():
 def test2():
     print("test2")
     assert simple.sum(1,1) == 2
+
+def test3():
+    print("test3")
+    assert simple.sum(1,1) == 1
