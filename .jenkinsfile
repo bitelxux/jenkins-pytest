@@ -1,11 +1,15 @@
 node(){
 
+    stage('setup'){
+        //sh "mkdir -p tests-results"
+    }
+
     stage('checkout'){
         checkout scm
     }
 
     stage("tests"){
-        sh "pytest tests/test.py --tb=line --junitxml=test-results/results.xml"
+        sh "pytest tests/test.py --tb=line --junitxml=tests-results/results.xml"
     }
 
     stage("publish"){
