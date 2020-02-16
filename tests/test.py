@@ -1,5 +1,11 @@
+import os
 import pytest
+import sys
+
+current = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current + '/../')
+
 import simple
 
 def test1():
-    assert simple(1,1) == 2
+    assert simple.sum(1,1) == 2
