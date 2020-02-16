@@ -14,7 +14,9 @@ def teardown_function():
     print("teardown function called")
 
 def test1():
+    print("test1")
     assert simple.sum(1,1) == 3
 
 def test2():
+    print("test2")
     assert simple.sum(1,1) == 2
