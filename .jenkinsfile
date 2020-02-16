@@ -1,7 +1,7 @@
 node(){
 
     stage('setup'){
-        //sh "mkdir -p tests-results"
+        sh "rm -rf ${WORKSPACE}/*"
     }
 
     stage('checkout'){
