@@ -7,6 +7,12 @@ sys.path.insert(0, current + '/../')
 
 import simple
 
+def setup_function():
+    print("setup function called")
+
+def teardown_function():
+    print("teardown function called")
+
 def test1():
     assert simple.sum(1,1) == 3
 
