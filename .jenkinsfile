@@ -1,0 +1,9 @@
+node(){
+    stage("tests"){
+        sh "pytest tests/test.py --tb=line --junitxml=results.xml"
+    }
+
+    stage("publish"){
+       junit 'results.txt'
+    }
+}
