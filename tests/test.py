@@ -14,10 +14,10 @@ def teardown_function():
     pass
 
 def test1():
-    assert simple.sum(1,1) == 3
+    assert simple.sum(1,1) == 2
 
 def test2():
     assert simple.sum(1,1) == 2
 
 def test3():
-    assert simple.sum(1,1) == 1
+    assert simple.sum(1,1) == 2
